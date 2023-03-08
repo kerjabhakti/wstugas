@@ -1,4 +1,4 @@
-package nguseup
+package wstugas
 
 import (
 	"context"

@@ -1,4 +1,4 @@
-package nguseup
+package wstugas
 
 import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
