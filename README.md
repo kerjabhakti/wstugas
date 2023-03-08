@@ -101,7 +101,7 @@ Pada sesi ini pastikan anda sudah mendaftarkan diri ke heroku. Kemudian kita aka
 Komunikasi di golang menggunakan json dipermudah dengan adanya struct type. Struct type ini akan mendefinisikan bagaimana bentuk json yang berkomunikasi dari frontend menuju backend. Sebelumnya inisiasi dulu package yang akan kita buat, masuk ke folder kerja kita dan lakukan inisialisasi package
 
 ```sh
-go mod init github.com/USERNAME/ai/Chapter01/KELAS/NPM
+go mod init github.com/kerjabhakti/WS/Chapter03/coba
 ```
 
 Buat file type.go pada folder tersebut. Kemudian isilah dengan struct yang akan kita buat. Perlu digaris bawahi dan wajib ada atribut :
@@ -168,6 +168,7 @@ Kompilasi dependensi dengan perintah
 ```sh
 go mod tidy
 ```
+![image](https://user-images.githubusercontent.com/15622730/223695744-a08e0760-836a-4d03-bc8f-75689e732a04.png)
 
 ### Fungsi di golang
 
@@ -233,11 +234,11 @@ rapihkan dependensi
 ```sh
 go mod tidy
 ```
+![image](https://user-images.githubusercontent.com/15622730/223695851-95913cc0-3bf0-4233-9fd0-438717032991.png)
 
 ### Testing Fungsi
 
-Koneksikan dengan Database
-Tonton modul koordinator : https://youtu.be/Kh6xGWSwQ5s
+Koneksikan dengan Database : https://youtu.be/Kh6xGWSwQ5s
 
 ```go
 package namapackage
@@ -278,13 +279,18 @@ Jalankan testing
 ```sh
 go test
 ```
+![image](https://user-images.githubusercontent.com/15622730/223695934-9cf9f14b-8720-4da1-b2a4-a26296806322.png)
+Untuk melihat hasil test klik FIND pada MongoDB Compas
 
 ### Publish Package
 
+Nonton Video Koordinator:
 https://youtu.be/XLh7-D9bnTE
 
 Setting dahulu environtment variabel di windows :
 GOPROXY=proxy.golang.org
+![image](https://user-images.githubusercontent.com/15622730/223696410-11ffa42a-225e-4d50-a30e-97d1894407d9.png)
+
 
 lakukan langkah berikut :
 
@@ -294,6 +300,13 @@ git tag v0.0.1
 git push origin --tags
 go list -m github.com/whatsauth/wasocket@v0.0.1
 ```
+![image](https://user-images.githubusercontent.com/15622730/223697179-b66aebe3-a9aa-4513-8e71-9786f01fe3d5.png)
+![image](https://user-images.githubusercontent.com/15622730/223697215-f7d24f58-d5a9-4cde-9ef2-c45ac4f972d7.png)
+Jika remote fatal rubah versinya dan ikuti langkah diatas:
+
+Ikuti langkahnya
+![image](https://user-images.githubusercontent.com/15622730/223699488-44e8665d-739c-40dd-8787-c59039dc1ce7.png)
+
 
 # Kerjakan
 
